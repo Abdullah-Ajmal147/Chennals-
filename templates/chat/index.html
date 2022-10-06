@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How to Create and Save text file in JavaScript</title>
+    <script src="./filesaver.js"></script>
+
+    <script>
+
+        function saveStaticDataToFile() {
+            var blob = new Blob(["Welcome to Websparrow.org."],
+                { type: "text/plain;charset=utf-8" });
+            saveAs(blob, "static.txt");
+        }
+		
+    </script>
+</head>
+<body>
+
+    <button type="button" onclick="saveStaticDataToFile();">Click to Save</button>
+
+</body>
+
+</html>
